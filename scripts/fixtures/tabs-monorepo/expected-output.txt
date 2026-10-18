@@ -1,0 +1,5 @@
+SHOULD-FIX   packages/ui/Tabs.tsx:3 — JS-drawn bottom tabs (React Navigation v7) — won't move to the iPhone Duo vertical bar; consider native tabs on iOS (RULES §7, STATUS)
+SHOULD-FIX   apps/mobile/src/Tabs.tsx:4 — bottom tabs with implementation 'custom' (React Navigation v8) — JS tabs won't move to the iPhone Duo vertical bar; drop the option to use native tabs (RULES §7, STATUS)
+SHOULD-FIX   apps/mobile/package.json — react-native 0.79 — templates before 0.88 lack a SceneDelegate; required for the iOS 27 SDK (STATUS)
+
+3 finding(s), 0 blocking.

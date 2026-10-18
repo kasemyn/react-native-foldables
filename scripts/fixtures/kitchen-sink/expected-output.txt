@@ -1,0 +1,17 @@
+SHOULD-FIX   src/layout.tsx:6 — Dimensions.get at module scope — stale after fold/resize; read a width class inside the component (RULES §1–2)
+SHOULD-FIX   src/layout.tsx:11 — device/idiom check — branch on the window's width class, not the device (RULES §1)
+SHOULD-FIX   src/layout.tsx:12 — orientation-based branch — orientation isn't room; use width/height classes (RULES §1)
+SHOULD-FIX   src/layout.tsx:13 — orientation lock — ignored on large screens and the iPhone Duo inner display; don't depend on it (RULES §4, §7)
+SHOULD-FIX   src/layout.tsx:7 — screen-size constant — the window changes at runtime; read it where you use it (RULES §1)
+SHOULD-FIX   src/layout.tsx:14 — one inset mirrored to both sides — use paddingLeft: insets.left, paddingRight: insets.right (RULES §6)
+SHOULD-FIX   src/layout.tsx:15 — inset doubled — insets are asymmetric; subtract left and right separately (RULES §6)
+NICE-TO-HAVE src/layout.tsx:1 — RN core SafeAreaView — deprecated and iOS-only; use react-native-safe-area-context (RULES §6)
+NICE-TO-HAVE src/layout.tsx:3 — JS stack headers — won't take part in iPhone Duo vertical bars; native-stack does (RULES §7)
+BLOCKING     android/app/src/main/AndroidManifest.xml — configChanges lacks smallestScreenSize — fold/unfold or resize recreates the Activity and drops React state (RULES §4)
+BLOCKING     android/app/src/main/AndroidManifest.xml — configChanges lacks screenLayout — fold/unfold or resize recreates the Activity and drops React state (RULES §4)
+SHOULD-FIX   android/app/src/main/AndroidManifest.xml — configChanges lacks density — moving to a display with another density recreates the Activity; add it and re-init DisplayMetricsHolder (RULES §4)
+NICE-TO-HAVE android/app/src/main/AndroidManifest.xml:6 — screenOrientation set — ignored at smallest width ≥ 600dp from targetSdk 36; don't depend on it (RULES §4)
+SHOULD-FIX   package.json — expo SDK 53 — its Android template lacks smallestScreenSize, so unfolding recreates the Activity; check the generated manifest (RULES §4)
+NICE-TO-HAVE app.json:3 — orientation lock in Expo config — won't hold on large screens or the iPhone Duo inner display (RULES §4, §7)
+
+15 finding(s), 2 blocking.

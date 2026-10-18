@@ -1,0 +1,5 @@
+e1 X=B Y=A
+e2 X=A Y=B
+e3 X=A Y=B
+e4 X=B Y=A
+e5 X=B Y=A

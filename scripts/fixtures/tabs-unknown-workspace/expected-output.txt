@@ -1,0 +1,3 @@
+SHOULD-FIX   src/Tabs.tsx:3 — JS-drawn bottom tabs if on React Navigation v7 or earlier (version not resolved) — won't move to the iPhone Duo vertical bar; v8 draws native tabs by default, v7 needs native tabs on iOS (RULES §7, STATUS)
+
+1 finding(s), 0 blocking.

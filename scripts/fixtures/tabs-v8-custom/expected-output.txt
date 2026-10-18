@@ -1,0 +1,5 @@
+SHOULD-FIX   src/Tabs.tsx:3 — bottom tabs with implementation 'custom' (React Navigation v8) — JS tabs won't move to the iPhone Duo vertical bar; drop the option to use native tabs (RULES §7, STATUS)
+SHOULD-FIX   src/Tabs.tsx:4 — bottom tabs with implementation 'custom' (React Navigation v8) — JS tabs won't move to the iPhone Duo vertical bar; drop the option to use native tabs (RULES §7, STATUS)
+SHOULD-FIX   src/Tabs.tsx:5 — bottom tabs with implementation 'custom' (React Navigation v8) — JS tabs won't move to the iPhone Duo vertical bar; drop the option to use native tabs (RULES §7, STATUS)
+
+3 finding(s), 0 blocking.

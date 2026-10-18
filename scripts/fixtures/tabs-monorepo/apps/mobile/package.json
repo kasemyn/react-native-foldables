@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^8.0.0-alpha.56",
+    "react-native": "0.79.0"
+  }
+}
